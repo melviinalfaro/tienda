@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tienda/components/appbar_tablet.dart';
 
 class MyTabletLayout extends StatefulWidget {
   const MyTabletLayout({super.key});
