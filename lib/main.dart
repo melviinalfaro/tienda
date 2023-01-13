@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tienda/home_screen.dart';
-
+import 'package:flutter/services.dart';
 
 void main() {
+  _configureSystemChrome();
   runApp(const Celulares());
 }
 
@@ -22,7 +23,15 @@ class Celulares extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
     );
   }
+}
+
+void _configureSystemChrome() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarBrightness: Brightness.light,
+    statusBarIconBrightness: Brightness.dark,
+  ));
 }
