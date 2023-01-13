@@ -21,6 +21,7 @@ class _MovilState extends State<MyMovilLayout> {
       ),
       bottomNavigationBar: NavigationBarTheme(
           data: NavigationBarThemeData(
+            backgroundColor: Theme.of(context).brightness == Brightness.dark ? const Color(0xFF252525) : Colors.white,
             indicatorColor: Colors.indigo.shade100,
             height: 80,
             labelTextStyle: MaterialStateProperty.all(
