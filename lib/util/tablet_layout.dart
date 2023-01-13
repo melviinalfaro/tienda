@@ -11,7 +11,6 @@ class _TabletState extends State<MyTabletLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appbarTablet,
       body: Row(
         children: [
           NavigationRail(
