@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tienda/homeScreen.dart';
+import 'package:tienda/home_screen.dart';
+
 
 void main() {
   runApp(const Celulares());
@@ -16,12 +17,12 @@ class Celulares extends StatelessWidget {
       home: const HomeScreen(),
       theme: ThemeData(
         primarySwatch: Colors.indigo,
-        brightness: Brightness.light
+        brightness: Brightness.light,
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
     );
   }
 }

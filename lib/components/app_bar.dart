@@ -2,13 +2,24 @@ import 'package:flutter/material.dart';
 
 final appbar = AppBar(
   title: const Text('Admin República Celular'),
-  centerTitle: true,
-  actions: [
+  elevation: 0,
+  actions: <Widget>[
     IconButton(
-      padding: const EdgeInsets.all(15.0),
-      splashRadius: 20,
-      onPressed: () {},
       icon: const Icon(Icons.search),
+      splashRadius: 20,
+      onPressed: () {
+        // Acción al presionar el botón de búsqueda
+      },
+    ),
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: IconButton(
+        icon: const Icon(Icons.more_vert),
+        splashRadius: 20,
+        onPressed: () {
+          // Acción al presionar el botón de búsqueda
+        },
+      ),
     ),
   ],
 );

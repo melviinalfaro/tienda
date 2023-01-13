@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tienda/util/desktopLayout.dart';
-import 'package:tienda/util/movilLayout.dart';
-import 'package:tienda/util/responsiveLayout.dart';
-import 'package:tienda/util/tabletLayout.dart';
+import 'package:tienda/util/desktop_layout.dart';
+import 'package:tienda/util/movil_layout.dart';
+import 'package:tienda/util/responsive_layout.dart';
+import 'package:tienda/util/tablet_layout.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

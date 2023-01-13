@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tienda/components/myAppBarDesktop.dart';
-import 'package:tienda/components/myDrawer.dart';
+import 'package:tienda/components/appbar_desktop.dart';
+import 'package:tienda/components/drawer.dart';
 
 class MyDesktopLayout extends StatelessWidget {
   const MyDesktopLayout({super.key});
