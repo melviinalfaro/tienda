@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tienda/components/app_bar.dart';
 
 class MyTabletLayout extends StatefulWidget {
   const MyTabletLayout({super.key});
@@ -11,6 +12,7 @@ class _TabletState extends State<MyTabletLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: appbar,
       body: Row(
         children: [
           NavigationRail(
