@@ -30,7 +30,7 @@ class Celulares extends StatelessWidget {
         brightness: Brightness.dark,
         appBarTheme: const AppBarTheme(color: Color(0XFF252525))
       ),
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.light,
     );
   }
 }
