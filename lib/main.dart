@@ -3,7 +3,6 @@ import 'package:tienda/home_screen.dart';
 import 'package:flutter/services.dart';
 
 void main() {
-  _configureSystemChrome();
   runApp(const Celulares());
 }
 
@@ -12,6 +11,10 @@ class Celulares extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.light,
+    ));
     return MaterialApp(
       title: 'República Celular',
       debugShowCheckedModeBanner: false,
@@ -22,16 +25,9 @@ class Celulares extends StatelessWidget {
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
+        appBarTheme: const AppBarTheme(color: Color(0XFF252525))
       ),
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
     );
   }
-}
-
-void _configureSystemChrome() {
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.transparent,
-    statusBarBrightness: Brightness.light,
-    statusBarIconBrightness: Brightness.dark,
-  ));
 }
