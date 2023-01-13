@@ -20,8 +20,11 @@ class Celulares extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const HomeScreen(),
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.blue,
         brightness: Brightness.light,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color.fromARGB(255, 0, 116, 199)
+        )
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
