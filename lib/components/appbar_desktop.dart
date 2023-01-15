@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 final appbardesktop = AppBar(
-  title: const Text('Admin República Celular'),
+  title: const Text('Administrador de República Celular'),
   centerTitle: true,
   leading: Builder(
     builder: (BuildContext context) {
@@ -46,7 +46,7 @@ final appbardesktop = AppBar(
         onPressed: () {
           // Realizar la búsqueda aquí
         },
-        tooltip: 'Perfil',
+        tooltip: 'Mi cuenta',
       ),
     ),
   ],

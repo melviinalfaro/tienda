@@ -9,7 +9,7 @@ class MyDesktopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appbardesktop,
-      drawer: myDrawer,
+      drawer: const MyDrawer(),
     );
   }
 }
